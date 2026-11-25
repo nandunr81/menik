@@ -4,6 +4,7 @@ Static landing page for Menik & Co. (wholesale calibrated Ceylon gemstones), bui
 
 - `index.html` – the whole page (HTML, CSS and a small script, no build step)
 - `assets/` – logo marks, gem cut-outs and photos
+- Smooth scrolling by [Lenis](https://github.com/darkroomengineering/lenis) 1.3.27 (loaded from unpkg); menu links stop below the sticky menu, and it switches off for visitors who prefer reduced motion
 
 ## Conversion tracking
 The page pushes these events to `window.dataLayer`: `generate_lead` (quote form sent), `whatsapp_click`, `email_click`. Add your Google Ads / Reddit Pixel tags (or Google Tag Manager) in `<head>` to pick them up.

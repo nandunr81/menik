@@ -8,6 +8,7 @@
 <meta property="og:title" content="Menik &amp; Co. – Calibrated Ceylon gemstones">
 <meta property="og:description" content="Sold wholesale to jewellers and designers. Origin and treatment stated on every stone.">
 <meta property="og:image" content="assets/sapphire-box-navy.jpg">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
 <link rel="icon" type="image/png" href="assets/logo-mark-navy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +21,6 @@ details[open] .sign{transform:rotate(45deg)}
 .pill[aria-pressed="false"]{background:#fff;color:#15213A}
 body{margin:0}
 a{color:#15213A}a:hover{color:#7A5C24}
-html{scroll-behavior:smooth}
 .f{width:100%;box-sizing:border-box;min-height:46px;padding:11px 12px;border:1px solid #CFC3AB;border-radius:2px;font:inherit;font-size:15px;color:#15181F;background:#fff}
 .f:focus{outline:2px solid #15213A;outline-offset:1px;border-color:#15213A}
 .lbl{display:block;font-size:12px;font-weight:600;letter-spacing:0.6px;text-transform:uppercase;color:#3A3F4A;margin-bottom:6px}
@@ -350,7 +350,10 @@ html{scroll-behavior:smooth}
 </div>
 
 </div>
+<script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
 <script>
+// Lenis smooth scroll; anchors offset by the sticky menu height. Turns itself off for prefers-reduced-motion.
+if (window.Lenis) { window.lenis = new Lenis({ autoRaf: true, anchors: { offset: -64 } }); }
 (function () {
   var form = document.getElementById('quoteForm');
   var thanks = document.getElementById('thanks');
