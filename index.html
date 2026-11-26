@@ -50,6 +50,12 @@ header{position:sticky;top:0;z-index:25}
 .stones>a{flex:none !important;min-width:0}
 .stones img{width:100% !important;max-width:170px;height:auto !important;aspect-ratio:1;margin:0 auto}
 }
+@media (max-width:860px){
+.pane>div,#quote>div>div:first-child{text-align:center}
+.pane p,.pane h1,.pane h2,#quote>div>div:first-child>p{margin-left:auto !important;margin-right:auto !important}
+.pane p[style*="display: flex"]{justify-content:center}
+#quote>div>div:first-child>div{margin-left:auto;margin-right:auto}
+}
 .mbar{display:none}
 @media (max-width:860px){.nav{display:none !important}.mbar{display:flex !important}.h1{font-size:34px !important}.sec{padding:64px 20px !important}}
 </style>
